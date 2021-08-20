@@ -70,6 +70,6 @@ let findEmployeeByFirstName = function(srcArray, firstName) {
 
 let calculatePayroll = function(srcArray) {
     return srcArray.reduce(function(accumulator, record) {
-       return accumulator + allWagesFor.call(record)
+       return accumulator + allWagesFor.call(record) // if it doesnt have an argument, we'll MAKE it have one
     }, 0)
 }
